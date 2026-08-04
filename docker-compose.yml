@@ -1,0 +1,43 @@
+version: "3.9"
+
+
+services:
+
+
+ frontend:
+
+
+  container_name:
+   ai-english-web
+
+
+  build:
+
+   context:
+    ./frontend
+
+
+  ports:
+
+   - "3000:3000"
+
+
+
+ backend:
+
+
+  container_name:
+   ai-english-api
+
+
+  build:
+
+   context:
+    ./backend
+
+
+  ports:
+
+   - "8000:8000"
+
+

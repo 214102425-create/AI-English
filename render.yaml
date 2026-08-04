@@ -1,0 +1,50 @@
+services:
+
+# 后端API
+
+- type: web
+
+  name: ai-english-api
+
+  runtime: python
+
+
+  rootDir: backend
+
+
+  buildCommand:
+
+    pip install -r requirements.txt
+
+
+  startCommand:
+
+    uvicorn main:app --host 0.0.0.0 --port 8000
+
+
+  envVars:
+
+
+  - key: OPENAI_API_KEY
+
+    sync: false
+
+
+  - key: AZURE_SPEECH_KEY
+
+    sync: false
+
+
+  - key: AZURE_SPEECH_REGION
+
+    sync: false
+
+
+  - key: SUPABASE_URL
+
+    sync: false
+
+
+  - key: SUPABASE_KEY
+
+    sync: false

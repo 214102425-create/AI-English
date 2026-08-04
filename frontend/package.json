@@ -1,0 +1,38 @@
+{
+"name":"ai-english",
+
+"version":"1.0.0",
+
+"scripts":{
+
+"dev":"next dev",
+
+"build":"next build",
+
+"start":"next start"
+
+},
+
+"dependencies":{
+
+"next":"14.2.0",
+
+"react":"18.3.0",
+
+"react-dom":"18.3.0",
+
+"lucide-react":"latest"
+
+},
+
+"devDependencies":{
+
+"tailwindcss":"latest",
+
+"postcss":"latest",
+
+"autoprefixer":"latest"
+
+}
+
+}
