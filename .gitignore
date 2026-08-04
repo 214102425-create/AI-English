@@ -1,0 +1,19 @@
+# environment files
+.env
+backend/.env
+
+# node
+node_modules/
+.next/
+
+# python
+__pycache__/
+*.pyc
+
+# virtual environment
+venv/
+.venv/
+
+# logs
+*.log
+
